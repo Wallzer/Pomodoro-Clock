@@ -199,7 +199,7 @@ btn_volume_up = CanvasButton(canvas_setttings, 170, 35, VOLUME_UP_IMG, volume_up
 btn_volume_down = CanvasButton(canvas_setttings, 215, 35, VOLUME_DOWN_IMG, volume_down)#create the volume down button
 #################i just use button logic for background here################
 canvas_background = CanvasButton(canvas, 0, 0, BACKGORUNDS[background_index], btn_theme)
-canvas_backroud_button = CanvasButton(canvas, 360, 200, PLAY_IMG, button_change_theme)
+canvas_backroud_button = CanvasButton(canvas, 360, 550, PLAY_IMG, button_change_theme)
 ########################################################################
 # Create the timer text
 main_text = canvas.create_text(190, 100, text=f"{minutes:02d}:{seconds:02d}", font=('Helvetica', 48), fill="black")
@@ -207,10 +207,10 @@ upper_text = canvas.create_text(190, 50, text='chilling', font=('Helvetica', 14)
 # Create buttons, bind them to the canvas, and set their commands
 canvas_rain = CanvasButton(canvas, 360, 30, RAIN_IMG, btn_rain)
 canvas_pause = CanvasButton(canvas, 150, 128, PAUSE_IMG, btn_pause)
-canvas_play = CanvasButton(canvas, 200, 128, PLAY_IMG, btn_play)
+canvas_play = CanvasButton(canvas, 200, 128, PLAY_IMG, btn_play)    
 canvas_flame = CanvasButton(canvas, 360, 65, FLAME_IMG, btn_flame)
-canvas_timechange = CanvasButton(canvas, 360, 250, RESET_IMG, btn_timechange)
-canvas_settings = CanvasButton(canvas, 360, 300, SETTINGS_IMG, show_setings)
-canvas_back = CanvasButton(canvas_setttings, 360, 300, SETTINGS_IMG, show_setings)
+canvas_timechange = CanvasButton(canvas, 320, 550, RESET_IMG, btn_timechange)
+canvas_settings = CanvasButton(canvas, 360, 100, SETTINGS_IMG, show_setings)
+canvas_back = CanvasButton(canvas_setttings, 360, 100, SETTINGS_IMG, show_setings)
 # Start the main loop
 root.mainloop()
