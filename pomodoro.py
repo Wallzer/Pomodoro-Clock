@@ -214,4 +214,3 @@ canvas_settings = CanvasButton(canvas, 360, 300, SETTINGS_IMG, show_setings)
 canvas_back = CanvasButton(canvas_setttings, 360, 300, SETTINGS_IMG, show_setings)
 # Start the main loop
 root.mainloop()
-print('hehe')
