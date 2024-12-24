@@ -21,3 +21,5 @@ Future Plans:
 day/night 
 
 img's for weather 
+
+make better UI
