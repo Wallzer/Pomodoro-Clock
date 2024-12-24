@@ -19,4 +19,5 @@ Volume settings through GUI.
 
 Future Plans:
 day/night 
+
 img's for weather 
