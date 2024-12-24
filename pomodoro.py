@@ -1,6 +1,19 @@
 import tkinter as tk
 import pygame
 from wether_api import *
+import datetime
+now=datetime.datetime.now()
+def get_time():
+    root.after(60000, get_time)
+    hour=now.hour
+    minutes=now.minute
+    if minutes<10:
+        return f"{hour}:0{minutes}"
+    else:
+        return f"{hour}:{minutes}"
+
+
+
 minutes = 25
 seconds = 0
 music = ''
@@ -213,6 +226,7 @@ canvas_flame = CanvasButton(canvas, 360, 65, FLAME_IMG, btn_flame)
 canvas_timechange = CanvasButton(canvas, 320, 550, RESET_IMG, btn_timechange)
 canvas_settings = CanvasButton(canvas, 360, 100, SETTINGS_IMG, show_setings)
 canvas_back = CanvasButton(canvas_setttings, 360, 100, SETTINGS_IMG, show_setings)
-wether_text=canvas.create_text(190, 300, text=get_weather(), font=('Helvetica', 14), fill="black")
+wether_text=canvas.create_text(190, 25, text=get_weather(), font=('Helvetica', 14), fill="black")
+current_time=canvas.create_text(360, 580, text=get_time(), font=('Helvetica', 14), fill="white")
 # Start the main loop
 root.mainloop()

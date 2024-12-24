@@ -11,5 +11,6 @@ def get_weather():
         temperature = data['main']['temp']
         description = data['weather'][0]['description'].capitalize()
         return f"Temperature: {temperature}°C, {description}"
+    
     else:
         return "Weather error"
