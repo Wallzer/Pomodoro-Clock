@@ -1,7 +1,7 @@
 import requests
 
-API_KEY = "9401c18a5b13ebd028f7daec4c84b68e"  # Вставьте свой API-ключ
-CITY = "Kyiv"               # Замените на свой город
+API_KEY = "9401c18a5b13ebd028f7daec4c84b68e"  #api key here
+CITY = "Kyiv"               #city
 
 def get_weather():
     url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
@@ -14,3 +14,6 @@ def get_weather():
     
     else:
         return "Weather error"
+
+#https://openweathermap.org/weather-conditions#
+#add weathed icons later#
