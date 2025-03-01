@@ -18,4 +18,8 @@ Volume settings through GUI.
 ![image](https://github.com/user-attachments/assets/c25b6623-88f2-48d0-91ef-5a00d1898cba)
 
 Future Plans:
-idk
+day/night 
+
+img's for weather 
+
+make better UI
